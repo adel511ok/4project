@@ -1,0 +1,182 @@
+
+body {
+    font-family: 'El Messiri', sans-serif;    
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    background-color: #64cf61;
+}
+
+nav a {
+    padding: 10px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.brand {
+    font-weight: bold;
+    border-left: 3px solid #ffffff
+}
+
+.links {
+    flex-grow: 1;
+}
+
+#ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 35px;
+    background-color: #234e21;
+    height: 70vh;
+    background-image: url("../images/ad5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+#ad h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+#ad p {
+    font-size: 25px;
+}
+
+#menu {
+    padding: 0 35px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin: 5px;
+    width: 300px;
+}
+
+.card-body {
+    margin: 15px;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #64cf61;
+    border-radius: 5px;
+}
+.card img {
+    width: 100%;
+}
+.card-image {
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.price {
+    color: #ffffff;
+    background-color: #64cf61;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.add {
+    color: #ffffff;
+    background-color: #234e21;
+    border-radius: 5px;
+    border-width: 0;
+    font-family: 'El Messiri', sans-serif;
+}
+.add:hover {
+    background-color: #64cf61;
+}
+
+.discount {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #df4747;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #64cf61;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    #ad h1 {
+        font-size: 25px;
+    }
+    #ad p {
+        font-size: 15px;
+        padding-bottom: 0;
+        margin-bottom: 5px;
+    }
+    #ad {
+        height: 50vh;
+    }
+    .title {
+        background-color: #65cf615d;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 473px) {
+    .brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .flex-item {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .flex-item {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .flex-item {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flex-item {
+        width: 100%;
+    }
+}
